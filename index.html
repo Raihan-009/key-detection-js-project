@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./app.js">
+    <title>js project</title>
+</head>
+
+<body>
+    <div class="background">
+        <h3>Press Any Key</h3>
+        <div class="content">
+            <div class="key-code">
+                13
+            </div>
+            <div class="key-name">
+                Return
+            </div>
+            <div class="content-details">
+                <p class="key">Key : Return</p>
+                <p class="code">Code : 13</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const background = document.querySelector(".background");
+    const keycode = document.getElementsByClassName("key-code");
+    console.log(keycode);
+    document.addEventListener("keydown", (e) => {
+        console.log(e);
+        background.classList.add("active");
+        keycode.outerText = e.keycode;
+    });
+</script>
+
+</html>
