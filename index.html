@@ -14,15 +14,11 @@
     <div class="background">
         <h3>Press Any Key</h3>
         <div class="content">
-            <div class="key-code">
-                13
-            </div>
-            <div class="key-name">
-                Return
-            </div>
+            <div class="key-code"></div>
+            <div class="key-name"> </div>
             <div class="content-details">
-                <p class="key">Key : Return</p>
-                <p class="code">Code : 13</p>
+                <p class="key">Key : <span></span></p>
+                <p class="code">Code : <span></span></p>
             </div>
         </div>
     </div>
@@ -34,7 +30,12 @@
     document.addEventListener("keydown", (e) => {
         console.log(e);
         background.classList.add("active");
-        keycode.outerText = e.keycode;
+
+        let keyname = e.keyCode === 32 ? "Space" : e.key;
+        background.querySelector(".key-code").innerHTML = e.keyCode;
+        background.querySelector(".key-name").innerHTML = keyname;
+        background.querySelector(".key span").innerHTML = keyname;
+        background.querySelector(".code span").innerHTML = e.keyCode;
     });
 </script>
 
