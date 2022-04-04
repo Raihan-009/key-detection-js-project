@@ -22,21 +22,8 @@
             </div>
         </div>
     </div>
-</body>
-<script>
-    const background = document.querySelector(".background");
-    const keycode = document.getElementsByClassName("key-code");
-    console.log(keycode);
-    document.addEventListener("keydown", (e) => {
-        console.log(e);
-        background.classList.add("active");
 
-        let keyname = e.keyCode === 32 ? "Space" : e.key;
-        background.querySelector(".key-code").innerHTML = e.keyCode;
-        background.querySelector(".key-name").innerHTML = keyname;
-        background.querySelector(".key span").innerHTML = keyname;
-        background.querySelector(".code span").innerHTML = e.keyCode;
-    });
-</script>
+    <script src="./app.js"></script>
+</body>
 
 </html>
