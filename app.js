@@ -1,6 +1,6 @@
 const background = document.querySelector(".background");
 document.addEventListener("keydown", (e) => {
-  //console.log(e);
+  console.log(e);
   background.classList.add("active");
 
   //let keyname = e.keyCode === 32 ? "Space" : e.keyCode;
@@ -8,7 +8,6 @@ document.addEventListener("keydown", (e) => {
   let keyname = e.keyCode;
   let code = e.key;
   if (e.keyCode == 32) {
-    console.log("demo");
     keyname = 32;
     code = "space";
   }
