@@ -9,14 +9,44 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  background-color: rgba(102, 230, 202, 0.427);
 }
 
 .background {
-  background-color: yellow;
+  background-color: white;
   width: 480px;
   height: auto;
   padding: 25px;
   border-radius: 10px;
+}
+
+.background .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background .heading h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.background .heading p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #6e6c6c;
+  margin-bottom: 10px;
 }
 
 .background h3 {
@@ -30,6 +60,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 35px;
+  border: 2px solid rgba(11, 159, 127, 0.427);
 }
 
 .background .content {
@@ -57,7 +88,7 @@ body {
 }
 
 .background.active .content .key-code {
-  border: 5px solid red;
+  border: 5px solid rgba(11, 159, 127, 0.427);
   height: 100px;
   width: 100px;
   border-radius: 50%;

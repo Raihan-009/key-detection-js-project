@@ -3,19 +3,38 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: rgba(102, 230, 202, 0.427);
 }
 .background {
-  background-color: yellow;
+  background-color: white;
   width: 480px;
   height: auto;
   padding: 25px;
   border-radius: 10px;
+  .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4{
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-size: 25px;
+    }
+    p{
+      margin-top: 5px;
+      font-size: 18px;
+      color: rgb(110, 108, 108);
+      margin-bottom: 10px;
+    }
+  }
 
   h3 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 35px;
+    border: 2px solid rgba(11, 159, 127, 0.427);
   }
 
   .content {
@@ -33,7 +52,7 @@ body {
     align-items: center;
     justify-content: center;
     .key-code {
-      border: 5px solid red;
+      border: 5px solid rgba(11, 159, 127, 0.427);
       height: 100px;
       width: 100px;
       border-radius: 50%;
